@@ -59,17 +59,23 @@
                 "class" "struct" "enum"
                 "defer" "assert" "goto" ))
              (x-types
-              '("Int" "Int8" "Int16" "Int32" "Int64"
-                "UInt" "UInt8" "UInt16" "UInt32" "UInt64"
+              '("Int" "Int8" "Int16" "Int32" "Int64" "Int128" "Int256"
+                "UInt" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UInt256"
                 "IntShort" "IntLong" "IntLongLong"
                 "UIntShort" "UIntLong" "UIntLongLong"
                 "Bool" "Bit"
-                "Char" "UChar" "SChar"
+                "CChar" "UCChar" "SCChar"
                 "IntPtr" "UIntPtr" "IntPtrDiff" "UIntSize"
-                "Float32" "Float64" "Float80" "Float96" "Float128" "FloatLong"
+                "Float16" "Float32" "Float64" "Float80" "Float96" "Float128" "FloatLong"
                 "Complex32" "Complex64" "Complex80" "Complex96" "Complex128" "ComplexLong"
-                "Any" "Number" "Function" "Signature" "String" "Array" "Vector" "Range"
-                "Dictionary" "List" "ForwardList" "Set" "Stack" "Channel" ))
+
+                "IntBig" "FloatBig"
+
+                "Any" "Array" "Base" "CString" "Channel" "Dictionary" "ForwardList"
+                "List" "Number" "Set" "Stack" "String" "Vector"
+                
+                "Function" "Signature"   
+                ))
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
