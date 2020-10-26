@@ -50,13 +50,13 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "let" "var" "set"
+                "define" "let" "var" "set"
                 "function" "method" "signature" "ƒ" "return"
                 "if" "else"
                 "for" "in" "while" "then" "continue" "break" "not-break?" "never-run?"
-                "switch" "case" "default"
+                "match" "switch" "with" "default"
                 "go" "select" "channel" "interface" "send" "receive"
-                "class" "struct" "enum"
+                "class" "struct" "enum" "union" "item"
                 "defer" "assert" "goto" ))
              (x-types
               '("Int" "Int8" "Int16" "Int32" "Int64" "Int128" "Int256"
