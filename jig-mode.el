@@ -50,14 +50,18 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "define" "let" "var" "set"
-                "function" "ƒn" "method" "ƒm" "signature" "ƒs" "return" 
-                "if" "else"
-                "for" "in" "while" "then" "continue" "break" "not-break?" "never-run?"
-                "match" "switch" "with" "when" "default"
+                "def" "let" "var" "set"
+                "if" "then" "else"
+                "match" "with" "when" "switch" "default"
+                "for" "in" "while" "do" "not-break?" "never-run?"
+                "defer" "assert" 
+                "break" "continue" "goto"
                 "go" "select" "channel" "interface" "send" "receive"
-                "class" "struct" "enum" "union" "item"
-                "defer" "assert" "goto" ))
+                "fn" "method"
+                "return" 
+                "class" "struct"
+                "enum" "union" "item"
+                 ))
              (x-types
               '("Int" "Int8" "Int16" "Int32" "Int64" "Int128" "Int256"
                 "UInt" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UInt256"
@@ -71,17 +75,16 @@
 
                 "IntBig" "FloatBig"
 
-                "Any" "Array" "Base" "CString" "Channel" "Dictionary" "ForwardList"
+                "Any" "Array" "Channel" "Dictionary"
                 "List" "Number" "Set" "Stack" "String" "Vector"
                 
-                "Function" "Signature"   
                 ))
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
               '("not" "and" "or" "xor" "nand" "nor" "xnor"))
              (x-functions
-              '("print-line" "print" "input"))
+              '("println" "print" "input"))
 
              ;; generate regex string for each category of keywords
              (x-keywords-regexp (regexp-opt x-keywords 'words))
