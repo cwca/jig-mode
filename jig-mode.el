@@ -50,9 +50,9 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "def" "let" "var" "set"
+                "def" "let" "var" "set" "as"
                 "if" "then" "else"
-                "match" "with" "when" "switch" "default"
+                "match" "with" "when" "switch" "case" "default"
                 "for" "in" "while" "do" "not-break?" "never-run?"
                 "defer" "assert" 
                 "break" "continue" "goto"
