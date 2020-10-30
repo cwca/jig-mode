@@ -50,17 +50,17 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "def" "let" "var" "set" "as"
+                "define" "let" "var" "set" "as"
                 "if" "then" "else"
-                "match" "with" "when" "switch" "case" "default"
+                "match" "with" "when" "switch" "label" "rest"
                 "for" "in" "while" "do" "not-break?" "never-run?"
                 "defer" "assert" 
                 "break" "continue" "goto"
                 "go" "select" "channel" "interface" "send" "receive"
-                "fn" "method"
+                "defun" "ƒn" "defmethod" "ƒm" "ƒs"
                 "return" 
-                "class" "struct"
-                "enum" "union" "item"
+                "defclass" "class" "defstruct" "struct"
+                "defenum" "enum" "defunion" "union" "item"
                  ))
              (x-types
               '("Int" "Int8" "Int16" "Int32" "Int64" "Int128" "Int256"
@@ -72,6 +72,7 @@
                 "IntPtr" "UIntPtr" "IntPtrDiff" "UIntSize"
                 "Float16" "Float32" "Float64" "Float80" "Float96" "Float128" "FloatLong"
                 "Complex32" "Complex64" "Complex80" "Complex96" "Complex128" "ComplexLong"
+                "Float" "Double"
 
                 "IntBig" "FloatBig"
 
