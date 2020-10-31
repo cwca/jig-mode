@@ -45,6 +45,11 @@
   :type 'regexp
   :group 'paren-face)
 
+(defcustom string-q1-face-regexp "[‘’]"
+  "Regular expression to match parentheses."
+  :type 'regexp
+  :group 'string-face)
+
 (setq jig-font-lock-keywords
       (let* (
              ;; define a few categories of keywords
@@ -96,15 +101,21 @@
              )
 
         `(
-          ("(\\#[\0-\377[:nonascii:]]*?\\#)" . font-lock-comment-face)
-          ("#.+" . font-lock-comment-face)
-          ;(,paren-face-regexp . 'parenthesis)   ;; turn on if want to de-emphasise parens
+          (,"(\\#[\0-\377[:nonascii:]]*?\\#)" . font-lock-comment-face)
+          (,"«««\[\0-\377[:nonascii:]]*?\»»»" . font-lock-string-face)
+          (,"‘.*’" . font-lock-string-face)
+          (,"“.*”" . font-lock-string-face)
+          (,"«.*»" . font-lock-string-face)
+          (,"#.*" . font-lock-comment-face)
           (,x-types-regexp . font-lock-type-face)
           (,x-constants-regexp . font-lock-constant-face)
           (,x-builtin-regexp . font-lock-builtin-face)
           (,x-functions-regexp . font-lock-function-name-face)
           (,x-keywords-regexp . font-lock-keyword-face)
           )))
+
+;;; REGEXP syntax
+;;; https://www.emacswiki.org/emacs/RegularExpression
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist (cons "\\.jig\\'" 'jig-mode))
