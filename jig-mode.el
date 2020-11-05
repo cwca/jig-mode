@@ -68,22 +68,18 @@
                 "defenum" "enum" "defunion" "union" "item"
                  ))
              (x-types
-              '("int" "i8" "i16" "i32" "i64" "i28"
-                "uint" "u8" "u16" "u32" "u64" "u128"
-                "ishort" "ilong" "ilonglong"
-                "ushort" "ulong" "ulonglong"
-                "bool"
-                "char" "uchar" "schar" "rune"
-                "isize" "usize"
-                "f16" "f32" "f64" "f80"
-                "c32" "c64" "80"
-                "float" "double" "doublelong"
+              '("Bool"
+                "Int" "IntSize" "Int8" "Int16" "Int32" "Int64" "Int128" "IntBig"
+                "UInt" "UIntSize" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UIntBig"
+                "Float16" "Float32" "Float64" "Float80" "FloatBig" 
+                "Complex32" "Complex64" "Complex80" "ComplexBig"
 
-                "ibig" "fbig"
+                "Any" "Array" "Channel" "Dictionary" "List" "Number"
+                "Set" "Stack" "String" "Vector"
 
-                "Any" "Array" "Channel" "Dictionary"
-                "List" "Number" "Set" "Stack" "String" "Vector"
-                
+                "Char" "SChar" "UChar"
+                "IntShort" "UIntShort" "IntLong" "UIntLong" "IntLongLong" "UIntLongLong"
+                "Float" "Double" "DoubleLong" "ComplexLong"
                 ))
              (x-constants
               '("true" "false" "nil"))
