@@ -69,8 +69,13 @@
                  ))
              (x-types
               '("Bool"
-                "Int" "IntSize" "Int8" "Int16" "Int32" "Int64" "Int128" "IntBig"
+                
+                "Int8" "Int16" "Int32" "Int64" "Int128" "IntBig"
+                "Int" "IntSize" "Rune"
+                
                 "UInt" "UIntSize" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UIntBig"
+                "UInt" "UIntSize"
+                
                 "Float16" "Float32" "Float64" "Float80" "FloatBig" 
                 "Complex32" "Complex64" "Complex80" "ComplexBig"
 
