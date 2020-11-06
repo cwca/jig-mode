@@ -62,7 +62,8 @@
                 "defer" "assert" 
                 "break" "continue" "goto"
                 "go" "select" "channel" "interface" "send" "receive"
-                "defun" "ƒn" "defmethod" "ƒm" "ƒs"
+                "defun" "function" "ƒn" "defmethod" "method" "ƒm"
+                "signature" "ƒs" "argument" "ƒa"
                 "return" 
                 "defclass" "class" "defstruct" "struct"
                 "defenum" "enum" "defunion" "union" "item"
@@ -106,10 +107,10 @@
         `(
           (,"(\\#[\0-\377[:nonascii:]]*?\\#)" . font-lock-comment-face)
           (,"«««\[\0-\377[:nonascii:]]*?\»»»" . font-lock-string-face)
+          (,"#.*" . font-lock-comment-face)
           (,"‘.*’" . font-lock-string-face)
           (,"“.*”" . font-lock-string-face)
           (,"«.*»" . font-lock-string-face)
-          (,"#.*" . font-lock-comment-face)
           (,x-types-regexp . font-lock-type-face)
           (,x-constants-regexp . font-lock-constant-face)
           (,x-builtin-regexp . font-lock-builtin-face)
