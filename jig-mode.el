@@ -76,15 +76,17 @@
                 "UInt" "UIntSize" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UIntBig"
                 "UInt" "UIntSize"
                 
-                "Float16" "Float32" "Float64" "Float80" "FloatBig" 
+                "Float16" "Float32" "Float64" "Float80" "FloatBig"
+                "Float" "FloatLong"
+                
                 "Complex32" "Complex64" "Complex80" "ComplexBig"
+                "Complex" "ComplexLong"
 
                 "Any" "Array" "Channel" "Dictionary" "List" "Number"
                 "Set" "Stack" "String" "Vector"
 
                 "Char" "SChar" "UChar"
                 "IntShort" "UIntShort" "IntLong" "UIntLong" "IntLongLong" "UIntLongLong"
-                "Float" "Double" "DoubleLong" "ComplexLong"
                 ))
              (x-constants
               '("true" "false" "nil"))
