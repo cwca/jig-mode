@@ -55,7 +55,7 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "define" "let" "var" "set" "as"
+                "define" "def" "let" "variable" "var" "value" "val" "set" "as"
                 "if" "then" "else"
                 "match" "with" "when" "switch" "label" "rest"
                 "for" "in" "while" "do" "not-break?" "never-run?"
