@@ -55,16 +55,17 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "def" "let" "var" "val" "set" "as"
+                
+                "def" "defvar" "let" "var" "set" "as"
+                "ƒn" "ƒm" "ƒs" "ƒa" "return" 
+                "class" "struct" "enum" "union" "item"
+                
                 "if" "then" "else"
                 "switch" "match" "case" "when" "default"
                 "for" "in" "while" "do" "not-break?" "never-run?"
                 "defer" "assert" 
                 "break" "continue" "goto"
                 "go" "select" "channel" "interface" "send" "receive"
-                "function" "ƒn" "defmethod" "method" "ƒm" "signature" "ƒs" "argument" "ƒa" "return"
-                "class" "struct" "enum" "union" "item"
-                "defun" "defclass" "defstruct" "defenum" "defunion" 
                  ))
              (x-types
               '("Bool"
@@ -80,8 +81,6 @@
                 
                 "Complex32" "Complex64" "Complex80" "ComplexBig"
                 "Complex" "ComplexLong"
-
-                "Number"
 
                 "Any" "Array" "Channel" "Dictionary" "List" "Number"
                 "Set" "Stack" "String" "Vector"
