@@ -55,18 +55,16 @@
              ;; define a few categories of keywords
              (x-keywords
               '("import" "use"
-                "define" "def" "let" "variable" "var" "value" "val" "set" "as"
+                "def" "let" "var" "val" "set" "as"
                 "if" "then" "else"
-                "match" "with" "when" "switch" "label" "rest"
+                "switch" "match" "case" "when" "default"
                 "for" "in" "while" "do" "not-break?" "never-run?"
                 "defer" "assert" 
                 "break" "continue" "goto"
                 "go" "select" "channel" "interface" "send" "receive"
-                "defun" "function" "ƒn" "defmethod" "method" "ƒm"
-                "signature" "ƒs" "argument" "ƒa"
-                "return" 
-                "defclass" "class" "defstruct" "struct"
-                "defenum" "enum" "defunion" "union" "item"
+                "function" "ƒn" "defmethod" "method" "ƒm" "signature" "ƒs" "argument" "ƒa" "return"
+                "class" "struct" "enum" "union" "item"
+                "defun" "defclass" "defstruct" "defenum" "defunion" 
                  ))
              (x-types
               '("Bool"
@@ -83,6 +81,8 @@
                 "Complex32" "Complex64" "Complex80" "ComplexBig"
                 "Complex" "ComplexLong"
 
+                "Number"
+
                 "Any" "Array" "Channel" "Dictionary" "List" "Number"
                 "Set" "Stack" "String" "Vector"
 
@@ -94,7 +94,7 @@
              (x-builtin
               '("not" "and" "or" "xor" "nand" "nor" "xnor"))
              (x-functions
-              '("println" "print" "input"))
+              '("printn" "print" "input"))
 
              ;; generate regex string for each category of keywords
              (x-keywords-regexp (regexp-opt x-keywords 'words))
