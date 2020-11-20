@@ -56,7 +56,7 @@
              (x-keywords
               '("import" "use"
                 
-                "def" "defvar" "let" "var" "set" "as"
+                "def" "let" "var" "set" "as"
                 "ƒn" "ƒm" "ƒs" "ƒa" "return" 
                 "class" "struct" "enum" "union" "item"
                 
