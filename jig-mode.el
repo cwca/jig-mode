@@ -57,7 +57,7 @@
               '("import" "use"
                 
                 "def" "let" "var" "set" "as"
-                "ƒn" "ƒm" "ƒs" "ƒa" "return" 
+                "function" "ƒn" "method" "ƒm" "signature" "ƒs" "ƒa" "return" 
                 "class" "struct" "enum" "union" "item"
                 
                 "if" "then" "else"
