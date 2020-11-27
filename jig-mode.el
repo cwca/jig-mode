@@ -56,9 +56,10 @@
              (x-keywords
               '("import" "use"
                 
-                "def" "defvar" "defun" "let" "var" "set" "as"
+                "let" "var" "set" "as"
                 "function" "ƒn" "method" "ƒm" "signature" "ƒs" "argument" "ƒa" "return" 
                 "class" "struct" "enum" "union" "item"
+                "def" "defvar" "defun" "defmethod"
                 
                 "if" "then" "else"
                 "switch" "match" "case" "when" "default"
@@ -87,6 +88,8 @@
 
                 "Char" "SChar" "UChar"
                 "IntShort" "UIntShort" "IntLong" "UIntLong" "IntLongLong" "UIntLongLong"
+
+                "Wire" "Reg"
                 ))
              (x-constants
               '("true" "false" "nil"))
