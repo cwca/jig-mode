@@ -94,7 +94,7 @@
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
-              '("not" "and" "or" "xor" "nand" "nor" "xnor"))
+              '("not" "and" "or" "xor" "nand" "nor" "xnor" "∧" "∨" "¬"))
              (x-functions
               '("printn" "print" "input"))
 
