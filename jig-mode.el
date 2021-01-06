@@ -57,9 +57,8 @@
               '("import" "use"
                 
                 "let" "var" "set" "as" "type"
-                "function" "func" "fn" "return" 
+                "function" "func" "fn" "method" "return" 
                 "class" "struct" "enum" "union" "item"
-                "def" "defvar" "defun" "defmethod"
                 
                 "if" "then" "else"
                 "switch" "match" "case" "when" "default"
