@@ -57,7 +57,7 @@
               '("import" "use"
                 
                 "let" "var" "set" "as" "type"
-                "function" "func" "fn" "method" "return" 
+                "function" "func" "fn" "method" "is"
                 "class" "struct" "enum" "union" "item"
                 
                 "if" "then" "else"
@@ -93,7 +93,7 @@
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
-              '("not" "and" "or" "xor" "nand" "nor" "xnor" "shl" "shr" ))
+              '("not" "and" "or" "xor" "nand" "nor" "xnor" "∧" "∨" "¬"))
              (x-functions
               '("printn" "print" "input"))
 
@@ -106,8 +106,11 @@
              )
 
         `(
-          (,"(--\\#[\0-\377[:nonascii:]]*?\\--)" . font-lock-comment-face)
+          (,"(\\⍝[\0-\377[:nonascii:]]*?\\⍝)" . font-lock-comment-face)
+          (,"/\\\*[\0-\377[:nonascii:]]*?\\\*/" . font-lock-comment-face)
           (,"«««\[\0-\377[:nonascii:]]*?\»»»" . font-lock-string-face)
+          (,"⍝.*" . font-lock-comment-face)
+          (,"//.*" . font-lock-comment-face)
           (,"--.*" . font-lock-comment-face)
           (,"‘.*’" . font-lock-string-face)
           (,"“.*”" . font-lock-string-face)
