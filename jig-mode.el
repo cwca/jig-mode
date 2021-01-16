@@ -57,7 +57,7 @@
               '("import" "use"
                 
                 "let" "var" "set" "as" "type"
-                "function" "func" "fn" "method" "is"
+                "def" "lambda" "λ" "function" "ƒ" "method" "is"
                 "class" "struct" "enum" "union" "item"
                 
                 "if" "then" "else"
@@ -82,7 +82,7 @@
                 "Complex32" "Complex64" "Complex80" "ComplexBig"
                 "Complex" "ComplexLong"
 
-                "Any" "Array" "Channel" "Dictionary" "List" "Number"
+                "Any" "Array" "Auto" "Channel" "Dictionary" "List" "Number"
                 "Set" "Stack" "String" "Vector"
 
                 "Char" "SChar" "UChar"
@@ -93,7 +93,7 @@
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
-              '("not" "and" "or" "xor" "nand" "nor" "xnor" "∧" "∨" "¬"))
+              '("not" "and" "or" "xor" "nand" "nor" "xnor"))
              (x-functions
               '("printn" "print" "input"))
 
