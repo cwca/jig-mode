@@ -56,8 +56,8 @@
              (x-keywords
               '("import" "use"
                 
-                "let" "var" "set" "as" "type"
-                "def" "lambda" "λ" "function" "ƒ" "method" "is"
+                "^let" "let" "set" "as" "type" "^define" "define" 
+                "lambda" "λ" "function" "ƒ" "Function" "Ƒ" "^method" "method" "is"
                 "class" "struct" "enum" "union" "item"
                 
                 "if" "then" "else"
@@ -93,7 +93,7 @@
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
-              '("not" "and" "or" "xor" "nand" "nor" "xnor"))
+              '("not" "not?" "¬" "¬?" "and" "and?" "∧" "∧?" "or" "or?" "∨" "∨?" "xor" "nand" "nor" "xnor"))
              (x-functions
               '("printn" "print" "input"))
 
