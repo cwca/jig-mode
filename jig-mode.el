@@ -56,7 +56,7 @@
              (x-keywords
               '("import" "use"
                 
-                "val" "var" "defval" "defvar" "set" "as" "type"
+                "let" "var" "deflet" "defvar" "set" "as" "type"
                 "lambda" "λ" "function" "ƒ" "Function" "Ƒ" "^method" "method" "is"
                 "class" "struct" "enum" "union" "item"
                 
