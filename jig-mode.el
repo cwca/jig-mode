@@ -56,34 +56,50 @@
              (x-keywords
               '("import" "use"
                 
-                "let" "var" "deflet" "defvar" "defun" "set" "as" "type"
-                "lambda" "λ" "function" "ƒ" "Function" "Ƒ" "^method" "method" "is"
-                "class" "struct" "enum" "union" "item"
-                
-                "if" "then" "else"
-                "switch" "match" "case" "when" "default"
-                "for" "in" "while" "do" "not-break?" "never-run?"
+                "letseq" "letpar" "letrec" "let" 
+                "varseq" "varpar" "varrec" "var" "set"
+                "type-of" "type-of?" "∊" "generic-type" "type"
+                "lambda" "λ" "function" "ƒ" "Function" "Ƒ" "method" "ɱ"
+                "size-of" "where"
+                "access-internal-set" "access-fileprivate-set" "access-private-set"
+                "Æ•set" "Æ↓set" "Æ↓↓set"
+                "access-open" "access-public" "access-internal" "access-fileprivate" "access-private"
+                "Æ↑↑" "Æ↑" "Æ↓↓" "Æ↓" "Æ•"
+                "override" "final" "implements"
+                "Œ" "ﬁ" "∍"
+                "element-of?" "not-element-of?" "contains-as-member?" "not-contains-as-member?"
+                "∈" "∉" "∋" "∌"
+                "quote" "argument-input" "←" "argument-output" "→" "return" "↑" "downcast-to" "↓"
+                "label" "‡"
+                "class" "struct" "enum" "union" "interface"
+                "if" "then" "else" "guard"
+                "switch" "case" "when" "default" "item"
+                "for" "in" "while" "do" "break?" "not-break?" "never-run?"
                 "defer" "assert" 
                 "break" "continue" "goto"
-                "go" "select" "channel" "interface" "send" "receive"
+                "go" "select" "channel" "send" "receive"
                  ))
              (x-types
               '("Bool"
                 
                 "Int8" "Int16" "Int32" "Int64" "Int128" "IntBig"
-                "Int" "IntSize" "Rune"
+                "IntSize" "Int" "Rune"
                 
                 "UInt" "UIntSize" "UInt8" "UInt16" "UInt32" "UInt64" "UInt128" "UIntBig"
-                "UInt" "UIntSize"
+                "UIntSize" "UInt" 
                 
-                "Float16" "Float32" "Float64" "Float80" "FloatBig"
-                "Float" "FloatLong"
+                "Float16" "Float32" "Float64" "Float80" "FloatBig" "FloatLong"
+                "Float" 
                 
-                "Complex32" "Complex64" "Complex80" "ComplexBig"
-                "Complex" "ComplexLong"
+                "Complex32" "Complex64" "Complex80" "ComplexBig" "ComplexLong"
+                "Complex"
 
-                "Any" "Array" "Auto" "Channel" "Dictionary" "List" "Number"
-                "Set" "Stack" "String" "Vector"
+                "Integer" "Rational" "Real" "Complex" "Number"
+
+                "Any" "None" "Void" "Auto"
+                
+                "Array" "Channel" "Dictionary" "List" "Multiset" 
+                "Ptr" "Stack" "String" "Tuple" "Uniset" "Vector"
 
                 "Char" "SChar" "UChar"
                 "IntShort" "UIntShort" "IntLong" "UIntLong" "IntLongLong" "UIntLongLong"
@@ -93,7 +109,12 @@
              (x-constants
               '("true" "false" "nil"))
              (x-builtin
-              '("not" "not?" "¬" "¬?" "and" "and?" "∧" "∧?" "or" "or?" "∨" "∨?" "xor" "nand" "nor" "xnor"))
+              '("¬" "not?" "∧" "and?" "∨" "or?" "not" "and" "or" "xor" "nand" "nor" "xnor"
+                ">>" "shift-left" "<<" "shift-right"
+                "…<" "…" "..." "..<"
+                "!=" "<=" ">=" "≤" "≥" "≠" ">" "<" "=?" "≟"
+                "=" "+=" "-=" "*=" "/="                
+                ))
              (x-functions
               '("printn" "print" "input"))
 
@@ -106,11 +127,8 @@
              )
 
         `(
-          (,"(\\⍝[\0-\377[:nonascii:]]*?\\⍝)" . font-lock-comment-face)
-          (,"/\\\*[\0-\377[:nonascii:]]*?\\\*/" . font-lock-comment-face)
+          (,"(--\*[\0-\377[:nonascii:]]*?--)" . font-lock-comment-face)
           (,"«««\[\0-\377[:nonascii:]]*?\»»»" . font-lock-string-face)
-          (,"⍝.*" . font-lock-comment-face)
-          (,"//.*" . font-lock-comment-face)
           (,"--.*" . font-lock-comment-face)
           (,"‘.*’" . font-lock-string-face)
           (,"“.*”" . font-lock-string-face)
