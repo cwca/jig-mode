@@ -69,7 +69,7 @@
                 "Œ" "ﬁ" "∍"
                 "element-of?" "not-element-of?" "contains-as-member?" "not-contains-as-member?"
                 "∈" "∉" "∋" "∌"
-                "quote" "argument-input" "←" "argument-output" "→" "return" "↑" "downcast-to" "↓"
+                "quote" "argument-input" "←" "argument-output" "→" "return" "downcast-to"
                 "label" "‡"
                 "class" "struct" "enum" "union" "interface"
                 "if" "then" "else" "guard"
@@ -127,7 +127,7 @@
              )
 
         `(
-          (,"(--\*[\0-\377[:nonascii:]]*?--)" . font-lock-comment-face)
+          (,"(--\[\0-\377[:nonascii:]]*?--)" . font-lock-comment-face)
           (,"«««\[\0-\377[:nonascii:]]*?\»»»" . font-lock-string-face)
           (,"--.*" . font-lock-comment-face)
           (,"‘.*’" . font-lock-string-face)
